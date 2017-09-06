@@ -1,0 +1,93 @@
+body {
+  height: 800px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  font-family: helvetica;
+}
+
+.profileDiv {
+  width: 800px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-top: 12%;
+}
+
+.profileAvatars {
+  width: 40%;
+}
+
+.avatars {
+  height: 150px;
+  width: 150px;
+  border: 2px solid grey;
+  border-radius: 50%;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+.name {
+  font-size: 44px;
+  margin-left: -1px;
+}
+
+.jobInfo{
+  margin-top: -10px;
+  margin-left: 2px;
+  font-weight: lighter;
+}
+
+.contactInfo {
+  width: 60%;
+  display: flex;
+  width: 500px;
+  margin: -30px 0px 10px 2px;
+}
+
+#contact {
+  font-weight: lighter;
+}
+
+.education_skills {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.education {
+  display: flex;
+  width: 500px;;
+  margin-left: -87px;
+}
+
+#university{
+  font-weight: lighter;
+  margin-left: 14px;
+}
+
+.skills {
+  display: flex;
+  margin-left: -53px;
+  margin-top: -20px;
+  width: 100%;
+}
+
+#skillsList {
+  font-weight: lighter;
+  margin-left: 17px;
+}
+
+.editDiv {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.edit {
+ margin-left: 7px;
+}
+
+.delete {
+ margin-left: 50px;
+}

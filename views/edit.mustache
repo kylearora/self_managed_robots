@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Edit Page</title>
+  </head>
+  <body>
+
+    <h1 id="editHeader">Please edit your robot below</h1>
+    <div class="main">
+      <h1>{{errorMessage}}</h1>
+      <form class="" action="/users/{{user._id}}" method="post">
+
+        <div class="">
+          <label for="">Name</label>
+          <input type="text" name="name" value="{{user.name}}">
+        </div>
+        <div class="">
+          <label for="">Avatar URL</label>
+          <input type="url" name="avatar" value="{{user.avatar}}">
+        </div>
+        <div class="">
+          <label for="">Email</label>
+          <input type="email" name="email" value="{{user.email}}">
+        </div>
+        <div class="">
+          <label for="">Phone Number</label>
+          <input type="text" name="phone" value="{{user.phone}}">
+        </div>
+        <div class="">
+          <label for="">University</label>
+          <input type="text" name="university" value="{{user.university}}">
+        </div>
+        <div class="">
+          <label for="">Company</label>
+          <input type="text" name="company" value="{{user.company}}">
+        </div>
+        <div class="">
+          <label for="">Job</label>
+          <input type="text" name="job" value="{{user.job}}">
+        </div>
+        <div class="">
+          <label for="">Skills</label>
+          <input type="text" name="skills" value="{{user.skills}}">
+        </div>
+
+        <div class="">
+          <input id="submitButton" type="submit" name="" value="Edit Robot">
+        </div>
+    </form>
+
+  </div>
+  </body>
+</html>

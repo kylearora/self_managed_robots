@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="/css/master.css">
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>{{title}}</h1>
+    <div class="newUser">
+      <a id="newRobotLink" href="/newRobot">Add New User to Directory</a>
+    </div>
+
+    <div class="theBigDiv">
+        {{#users}}
+          <div class="results">
+            <a href="/users/{{_id}}"><img class="avatars" src="{{avatar}}"></a>
+            <a href="/users/{{_id}}"><h2 class="name">{{name}}</h2></a>
+            <h4 class="jobInfo">
+              {{#job}}{{.}}, {{/job}}
+              {{^job}}<h4 class ="unemployed">Available for Hire</h3>{{/job}}
+              {{company}}
+            </h4>
+          </div>
+        {{/users}}
+    </div>
+  </body>
+</html>

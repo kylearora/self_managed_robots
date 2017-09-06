@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="/css/user.css">
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1></h1>
+    <div class="profileDiv">
+      {{#user}}
+        <div class="profileAvatar">
+          <img class="avatars" src="{{avatar}}">
+        </div>
+        <div class="profileInfo">
+          <h1 class="name">{{name}}</h1>
+          <h4 class="jobInfo">
+
+            {{job}},
+            {{company}}
+          </h4>
+        <div class="contactInfo">
+          <h4 id="contact">{{email}} | {{phone}}</h4>
+        </div>
+        <div class="education">
+          <h4 id="educationHeader">Education</h4>
+          <h4 id="university">{{university}}</h4>
+        </div>
+        <div class="skills">
+          <h4 id="skillsHeader">Skills</h4>
+          <h4 id="skillsList">{{skills}}</h4>
+       </div>
+        <div class="editDiv">
+          <div class="edit">
+            <a href="/users/{{_id}}/edit">Edit</a>
+          </div>
+
+          <div class="delete">
+            <a href="/users/{{_id}}/delete">Delete</a>
+          </div>
+
+        </div>
+        {{/user}}
+
+    </div>
+  </body>
+</html>
